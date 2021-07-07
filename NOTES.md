@@ -15,11 +15,14 @@ POINTS OF FOCUS FOR STUDYING
 * controller actions
 * views
 * form helper apis (form_with)
+* writing rspec tests!
 
-User will open todo app and be greeted with a list of all todo lists (list#index). Lists will be organized by priority.
+User will open todo app and be greeted with a list of all todo lists (list#index).
 User can click on a List to view todos within the list. 
 
 Stretch:
+- implement List priority
+- implement due date for task
 - User model
   * username: string
   * password_digest: string

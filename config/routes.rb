@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # root path points to list index
 
   # list show page displays as list title
+  resources :list
+  root :controller => "list", :action => "index"
 end
