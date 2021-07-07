@@ -1,5 +1,8 @@
 <h1>All Lists</h1>
 
+<%= render partial: 'list_search_form' %>
+<%= render partial: 'new_list_form' %>
+
 <ul>
   <% @lists.each do |list| %>
     <li><a href="/list/<%= list.id %>"><%= list.title %></a></li>
