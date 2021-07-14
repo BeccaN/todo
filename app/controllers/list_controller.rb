@@ -8,14 +8,13 @@ class ListController < ApplicationController
   end
 
   def create
-
+    @list = List.create(title: params[:title])
+    redirect_to list_index_path
   end
 
   private
 
     def list_params
-      params.require(:list).permit(:search)
+      params.require(:list).permit(:search, :title)
     end
-
-
 end

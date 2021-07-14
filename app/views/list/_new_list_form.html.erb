@@ -1,1 +1,4 @@
-new list
+<%= form_with model: @list do |form| %>
+  <%= form.text_field :title %>
+  <%= form.submit %>
+<% end %>

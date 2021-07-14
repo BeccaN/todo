@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <nav>
+      This is a nav bar
+      <% if !params[:id] %>
+        <%= render partial: 'list_search_form' %>
+      <% end %>
+    </nav>
+    
     <%= yield %>
   </body>
 </html>

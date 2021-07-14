@@ -1,5 +1,7 @@
 class List < ApplicationRecord
   has_many :tasks
+  
+  validates :title, presence: true
 
   def self.search(search)
     if search && search != ""
@@ -9,4 +11,5 @@ class List < ApplicationRecord
       @lists = List.all
     end
   end
+  
 end
